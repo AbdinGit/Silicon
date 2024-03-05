@@ -1,0 +1,91 @@
+#section-faq{
+    background-color: white;
+}
+#faq-div{
+    background-color:white;
+    display: grid;
+    grid-template-columns: 500px auto;
+    max-width: 1400px; 
+    margin: 0 auto; 
+    height: 600px;
+    gap: 100px;
+    overflow: hidden;
+    margin-top:50px;
+    padding-top: 40px;
+}
+#contact-methods{
+    display: grid;
+    grid-template-columns: 196px 196px;
+    gap: 30px;
+    margin-top: 50px;
+}
+.contact-method{
+    height: 166px;
+    width: 196px;
+    border: 1px solid rgb(224, 220, 220);
+    border-radius: 10px;
+}
+.contact-method label{
+    color: #6366f1;
+    background-color: white;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 20px 0px 0px 20px;
+}
+.contact-method label i{
+    margin-left:10px;
+}
+.contact-method img{
+    margin: 20px 0px 0px 20px;
+}
+.contact-method p{
+    margin: 20px 0px 0px 20px;
+    color:gray;
+}
+#message{
+    color:#22c55e;
+}
+.questions{
+    box-shadow: 0 0 7px rgba(165, 162, 162, 0.5);
+    margin-top:10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    cursor: pointer;
+    height: 60px;
+}
+.more{
+    height: 36px;
+    width: 36px;
+    background-color: #f3f6ff;
+    border-radius: 50px;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+.more i{
+    position: relative;
+    top:7px;
+    left: 10px;
+}
+.questions h6 {
+    margin: 0;
+    padding: 20px;
+}
+.questions p {
+    padding-top: 10px;
+    padding-left: 25px;
+    color: gray;
+}
+.expanded {
+    transition: height 0.1s ease-in-out;
+    height: 120px;
+    .more{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-color: #6366f1 !important;
+        color: white;
+    }
+}

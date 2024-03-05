@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header a{
+    color:#33354d;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 20px;
+}
+header a:hover{
+    transition: text-shadow 0.3s ease-in-out;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: #33354d;
+}
+header{
+  display: grid;
+  grid-template-columns: auto 1fr auto auto; 
+  padding-top: 20px;
+  max-width: 1400px; 
+  margin: 0 auto; 
+  gap:20px;
+}
+#top-nav{
+    padding-top:8px;
+}
+/* Theme mode switch start */
+
+header .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+header .toggle-switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+header .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6366f1;
+    transition: .4s;
+  }
+  
+header .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:#6366f1;
+  }
+  
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider {
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    border-radius: 50%;
+  }
+
+/* Theme mode switch end */
+
+header button{
+  background-color: #6366f1;
+  border: none;
+  padding: 7px 22px 7px 22px;
+  border-radius: 6px;
+  color: white;
+}
+header button i{
+  margin-right:10px;
+}
+header button:hover{
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+#login-button{
+  padding-top:5px;
+}
+#switch{
+  display: flex;
+  justify-content: right;
+  padding-top:6px;
+}
+#switch p{
+  margin: 5px 10px 5px 10px;
+}

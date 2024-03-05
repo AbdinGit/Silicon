@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navigation-path{
+    margin: 0 auto;
+    width: 1400px;
+    color:gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a{
+        font-weight: 100;
+        color:gray;
+    }
+    #home-icon{
+        font-size: 20px;
+        margin-right:10px;
+        margin-top:2px;
+    }
+    #chevron{
+        font-size: 13px;
+        margin-top: 8px;
+        margin-right:15px;
+        margin-left:15px;
+    }
+    #contact{
+        color:#6366f1;
+    }
+}
+#contact-us{
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1400px; 
+    margin: 0 auto; 
+    background-color: #f3f6ff;
+    height: 500px;
+}
+#header-contact-us{
+    background-color: #f3f6ff;
+}
+#header{
+    background-color: #f3f6ff;
+}
+#section-contact-us{
+    background-color: #f3f6ff;
+}
+#email, #career{
+    display: grid;
+    grid-template-columns: 80px 300px;
+    margin-top:40px;
+}
+#contact-us-left-side label{
+    color: #6366f1;
+    cursor: pointer;
+}
+#contact-us-left-side i{
+    margin-left: 10px;
+}
+#contact-info{
+    height: 600px;
+    width: 630px;
+    background-color: white;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    input{
+        padding-left: 20px;
+    }
+}
+#contact-us-right-side{
+    display: flex;
+    justify-content: right;
+    margin-top:50px;
+    overflow: visible;
+}
+.textinput{
+    height: 50px;
+    width: 491px;
+    border: 1px solid rgb(231, 226, 226);
+    border-radius: 10px;
+}
+#date-time{
+    display: grid;
+    grid-template-columns: 234px 234px;
+}
+#date-time input{
+    height: 50px;
+    width: 234px;
+    border: 1px solid rgb(231, 226, 226);
+    border-radius: 10px;
+}
+#time-input{
+    margin-left: 23px;
+}
+#appointmentbtn{
+    height: 50px;
+    width: 200px;
+    background-color: #6366f1;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top:40px;
+}
+#appointmentbtn:hover{
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#contact-us-right-side p{
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+#contact-info{
+    padding-left: 60px;
+    padding-top:30px;
+    
+}
+#date-time i{
+    position: relative;
+    top:-35px;
+    left:200px;
+    cursor: pointer;
+}
+#specialist-chevron{
+    position: relative;
+    left: -37px;
+    cursor: pointer;
+}
+#map-and-phone{
+    margin:0 auto;
+    width: 1400px;
+    margin-top:200px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.contact1{
+    display: grid;
+    grid-template-columns: auto;
+    #check-features{
+        display: grid;
+        grid-template-columns: 25px auto;
+    }
+    
+}
+#open-hours {
+    display: grid;
+    grid-template-columns: 25px auto;
+    margin-bottom: 40px;
+    p{
+        margin: 0;
+    }
+}
+#contacts{
+    h4{
+        margin:0px 0px 40px 0px;
+    }
+    p{
+        color: rgb(68, 65, 65);
+    }
+}
+footer{
+    background-color: #0b0f19;
+}
+#footer{
+    background-color: #0b0f19;
+    margin: 0 auto;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: 500px auto auto auto;
+    color: rgb(104, 104, 104);
+    padding-top:70px;
+    padding-bottom:70px;
+    gap: 100px;
+}
+#subscribe-text{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+}
+#search{
+    button{
+        background-color: #6366f1;
+        border: none;
+        height: 52px;
+        width: 142px;
+        padding: 7px 22px 7px 22px;
+        border-radius: 5px;
+        color: white;
+    }
+    button:hover{
+        transition: box-shadow 0.3s ease-in-out;
+        box-shadow: 0 0 10px rgba(194, 189, 189, 0.5);
+        text-decoration: none;
+    }
+    input{
+        width: 330px;
+        height: 52px;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid rgb(83, 83, 83);
+        padding-left: 20px;
+        background-color: #0b0f19;
+    }
+}
+#footer-links-1 a{
+    color: white;
+    text-decoration: none;
+    display: grid;
+}
+#footer-links-2 a{
+    color: white;
+    text-decoration: none;
+    display: grid;
+}
+#footer-links-3{
+
+    a{
+        color: white;
+        text-decoration: none;
+        display: grid;
+    }
+    p{
+        color: #6366f1;
+    }
+}
+#logo-with-text{
+    img{
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    div{
+        margin-bottom: 20px;
+    }
+    #copyright-text{
+        margin-top: 60px;
+    }
+}
+#section-navigation-path{
+    background-color: #f3f6ff;
+}

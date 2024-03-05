@@ -1,0 +1,40 @@
+#section-subscribe{
+    background-color: white;
+}
+#subscribe{
+    background-color: #f3f6ff;
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1400px; 
+    margin: 0 auto; 
+    overflow: hidden;
+    padding:50px 100px 50px 100px;
+    gap: 100px;
+}
+#subscribe-text{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+}
+#search
+    button{
+        background-color: #6366f1;
+        border: none;
+        height: 52px;
+        width: 142px;
+        padding: 7px 22px 7px 22px;
+        border-radius: 5px;
+        color: white;
+    }
+    button:hover{
+        transition: box-shadow 0.3s ease-in-out;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+    }
+    input{
+        width: 330px;
+        height: 52px;
+        border-radius: 5px;
+        border: 1px solid rgb(221, 219, 219);
+        padding-left: 20px;
+    }

@@ -1,0 +1,62 @@
+#section-feedback{
+    background: linear-gradient(white,#ebdbfd);
+}
+#feedback{
+    background: linear-gradient(white,#ebdbfd);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 1400px; 
+    margin: 0 auto; 
+    height: 400px;
+    overflow: hidden;
+    margin-top:100px;
+    padding-top: 40px;
+}
+#arrows{
+    display: flex;
+    margin-top: 70px;
+}
+#circle{
+    height: 36px;
+    width: 36px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#circle:hover{
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#arrow-left{
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.review{
+    height: 300px;
+    width: 416px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#quotes{
+    position: relative;
+    top: -25px;
+    left: 25px;
+}
+#feedback-text{
+    padding: 5px 15px 10px 25px;
+}
+#stars{
+    padding: 5px 15px 25px 25px;
+}
+#person{
+    display: grid;
+    grid-template-columns: 60px auto;
+    margin-left: 25px;
+}
+#person p{
+    color: gray;
+}

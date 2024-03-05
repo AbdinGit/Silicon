@@ -1,0 +1,39 @@
+#section-how{
+    background-color: #f3f6ff;
+}
+#how-does-it-work{
+    max-width: 1400px; 
+    margin: 0 auto; 
+    background-color: #f3f6ff;
+    height: 1050px;
+}
+#how-does-it-work h1{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+#phones{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+}
+#round{
+    height: 44px;
+    width: 44px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text-phones{
+    text-align: center;
+    margin:0 auto;
+    width: 600px;
+    margin-top: 50px;
+}
+#text-phones p{
+    color: gray;
+    margin-top: 15px;
+}

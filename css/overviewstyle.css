@@ -1,0 +1,53 @@
+#section-overview{
+    background: linear-gradient(white,#ebdbfd);
+}
+#overview{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    background: linear-gradient(white,#ebdbfd);
+    height: 929px;
+    column-gap: 100px;
+}
+#leftsidetext{
+    display: grid;
+    margin-top:250px;
+    grid-template-rows: auto auto 1fr 120px;
+}
+#market-btns{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#rightsidephonephoto{
+    display: grid;
+    padding-right: 100px;
+    margin-top:auto;
+}
+#h1 h1{
+    font-size: 50px;
+    height: auto;
+}
+#more #round{
+    height: 44px;
+    width: 44px;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#round:hover{
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#more{
+    display: grid;
+    grid-template-columns: 44px 200px;
+    column-gap: 10px;
+}
+#more p{
+    margin-top:10px;
+}
