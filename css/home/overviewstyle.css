@@ -9,6 +9,19 @@
     background: linear-gradient(white,#ebdbfd);
     height: 929px;
     column-gap: 100px;
+    @media (max-width: 800px) {
+        grid-template-columns: auto;
+        height: auto;
+        p{
+            display:none;
+        }
+        #market-btns{
+            display: none;
+        }
+        #more{
+            display: none;
+        }
+      }
 }
 #leftsidetext{
     display: grid;
@@ -18,6 +31,7 @@
 #market-btns{
     display: grid;
     grid-template-columns: auto auto;
+    margin-top:30px;
 }
 #rightsidephonephoto{
     display: grid;
@@ -27,6 +41,7 @@
 #h1 h1{
     font-size: 50px;
     height: auto;
+    margin-bottom: 20px;
 }
 #more #round{
     height: 44px;

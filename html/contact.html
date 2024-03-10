@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a041cc045c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="..//css/headerstyle.css">
-    <link rel="stylesheet" href="..//css/contact-style.css">
+    <link rel="stylesheet" href="..//css/home/headerstyle.css">
+    <link rel="stylesheet" href="..//css/contact/contact-style.css">
     <title>Contact</title>
 </head>
 <body>
@@ -84,7 +84,7 @@
                         <div>
                             <h2>Get Online Consultation</h2>
                             <p>Full name</p>
-                            <input class="textinput" type="text">
+                            <input  class="textinput" type="text">
                             <p>Email address</p>
                             <input class="textinput" type="text">
                             <p>Specialist</p>
@@ -93,12 +93,12 @@
                             <div id="date-time">
                                 <div id="date-input">
                                     <p>Date</p>
-                                    <input type="text">
+                                    <input  class="textinput" type="text">
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </div>
                                 <div id="time-input">
                                     <p>Time</p>
-                                    <input type="text">
+                                    <input class="textinput" type="text">
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div class="contact1">
-                    <h4>Medical Center 1</h4>
+                    <h4>Medical Center 2</h4>
                     <div id="check-features">
                         <img src="../assets/photos/map-pin.svg" alt="map pin"></img>
                         <p>2464 Royal Ln. Mesa,New Jersey 45463</p>
@@ -161,8 +161,8 @@
                 <p>Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros. </p>
                 <p style="color: white;">Subscribe to our newsletter</p>
                  <div id="search">
-                     <input type="text" placeholder="🖂 Your Email">
-                     <button>Subscribe</button>
+                     <input id="emailInput" type="text" placeholder="🖂 Your Email">
+                     <button onclick="subscribe()">Subscribe</button>
                 </div>
                 <p id="copyright-text">2024. All rights reserved. Silicon Template</p>
             </div>
@@ -195,5 +195,6 @@
         </div>
     </footer>
 </body>
-<script src="..//script.js"></script>
 </html>
+<script src="..//js/contact.js"></script>
+<script src="..//js/home.js"></script>
