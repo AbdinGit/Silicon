@@ -52,7 +52,7 @@
             <section id="contact-us">
                 <div id="contact-us-left-side">
                     <h1>Contact Us</h1>
-                    <div id="email">
+                    <div id="email-section">
                         <div>
                             <img src="..//assets/photos/email-icon.svg" alt="">
                         </div>
@@ -80,31 +80,30 @@
                     </div>
                 </div>
                 <div id="contact-us-right-side">
-                    <div id="contact-info">
-                        <div>
-                            <h2>Get Online Consultation</h2>
-                            <p>Full name</p>
-                            <input  class="textinput" type="text">
-                            <p>Email address</p>
-                            <input class="textinput" type="text">
-                            <p>Specialist</p>
-                            <input class="textinput" type="text">
-                            <i id="specialist-chevron" class="fa-solid fa-chevron-down"></i>
-                            <div id="date-time">
-                                <div id="date-input">
-                                    <p>Date</p>
-                                    <input  class="textinput" type="text">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </div>
-                                <div id="time-input">
-                                    <p>Time</p>
-                                    <input class="textinput" type="text">
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </div>
+                    <form id="appointmentForm">
+                        <h2><strong>Get Online Consultation</strong></h2>
+                        <label for="fullName">Full Name</label><br>
+                        <input class="textinput" type="text" id="fullName" name="fullName" required><br>
+                        <label for="email">Email address</label><br>
+                        <input class="textinput" type="email" id="email" name="email" required><br>
+                        <label for="specialist">Specialist</label><br>
+                        <select class="textinput" id="specialist" name="specialist">
+                            <option value="General">General</option>
+                            <option value="Dentist">Dentist</option>
+                            <option value="Orthopedic">Orthopedic</option>
+                        </select><br>
+                        <div id="date-and-time">
+                            <div>
+                                <label for="date">Date</label><br>
+                                <input class="textinput" type="date" id="date" name="date" required><br>
+                            </div>
+                            <div>
+                                <label for="time">Time</label><br>
+                                <input class="textinput" type="time" id="time" name="time" required><br>
                             </div>
                         </div>
-                        <button id="appointmentbtn">Make an appointment</button>
-                    </div>
+                        <button id="appointmentbtn" type="submit">Book Appointment</button>
+                    </form>
                 </div>
             </section>
         </div>

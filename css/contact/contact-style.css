@@ -44,7 +44,7 @@
 #section-contact-us{
     background-color: #f3f6ff;
 }
-#email, #career{
+#email-section, #career{
     display: grid;
     grid-template-columns: 80px 300px;
     margin-top:40px;
@@ -56,14 +56,29 @@
 #contact-us-left-side i{
     margin-left: 10px;
 }
-#contact-info{
+
+/* Contact form */
+
+#appointmentForm{
     height: 600px;
     width: 630px;
+    padding-left: 60px;
+    padding-top:30px;
+    overflow: hidden;
     background-color: white;
     transition: box-shadow 0.3s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     input{
-        padding-left: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    label{
+        margin-top:20px;
+        font-weight: 600;
+    }
+    select{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 #contact-us-right-side{
@@ -78,18 +93,8 @@
     border: 1px solid rgb(231, 226, 226);
     border-radius: 10px;
 }
-#date-time{
-    display: grid;
-    grid-template-columns: 234px 234px;
-}
-#date-time input{
-    height: 50px;
-    width: 234px;
-    border: 1px solid rgb(231, 226, 226);
-    border-radius: 10px;
-}
-#time-input{
-    margin-left: 23px;
+.textinput:hover{
+    cursor: pointer;
 }
 #appointmentbtn{
     height: 50px;
@@ -105,28 +110,20 @@
     transition: box-shadow 0.3s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-#contact-us-right-side p{
-    font-weight: 600;
-    position: relative;
-    margin-bottom: 5px;
-    margin-top: 20px;
+#date-and-time{
+    display: grid;
+    grid-template-columns: 234px 234px;
+    gap: 20px;
+    input{
+        height: 50px;
+        width: 234px;
+        border: 1px solid rgb(231, 226, 226);
+        border-radius: 10px;
+    }
 }
-#contact-info{
-    padding-left: 60px;
-    padding-top:30px;
-    
-}
-#date-time i{
-    position: relative;
-    top:-35px;
-    left:200px;
-    cursor: pointer;
-}
-#specialist-chevron{
-    position: relative;
-    left: -37px;
-    cursor: pointer;
-}
+
+/* Contact form */
+
 #map-and-phone{
     margin:0 auto;
     width: 1400px;

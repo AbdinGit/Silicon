@@ -23,33 +23,33 @@ document.addEventListener("DOMContentLoaded", function() {
   function subscribe() {
     var email = document.getElementById("emailInput").value;
 
-    // Make sure email is not empty
+
     if (email.trim() === "") {
         alert("Please enter your email address.");
         return;
     }
 
-    // Make sure email contains "@"
+
     if (!email.includes("@")) {
         alert("Please enter a valid email address.");
         return;
     }
 
-    // Define the URL of the API endpoint
+
     const apiUrl = 'https://kyhnet23-assignment.azurewebsites.net/api/subscribe?email=' + encodeURIComponent(email);
 
-    // Define the options for the Fetch request
+
     const options = {
-        method: 'POST', // specify the HTTP method
+        method: 'POST', 
         headers: {
-            'Accept': '*/*', // specify the 'Accept' header
+            'Accept': '*/*',
         }
     };
 
-    // Send POST request
+
     fetch(apiUrl, options)
         .then(response => {
-            // Check if the response is successful (status code 200)
+
             if (response.ok) {
                 alert("Subscription successful!");
             } else {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
         .catch(error => {
-            // Log any errors that occur during the Fetch request
+
             console.error('Error:', error);
             alert("Subscription failed. Please try again later.");
         });
