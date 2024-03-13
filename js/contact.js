@@ -1,16 +1,29 @@
-document.getElementById("appointmentForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent the default form submission
+fetch('https://kyhnet23-assignment.azurewebsites.net/api/specialists')
+    .then(response => response.json())
+    .then(data => {
+        const specialistDropdown = document.getElementById('specialist');
+        data.forEach(specialist => {
+            const option = document.createElement('option');
+            option.value = specialist.id; 
+            option.text = `${specialist.firstName} ${specialist.lastName}`; 
+            specialistDropdown.appendChild(option);
+        });
+    })
+    .catch(error => console.error('Error fetching specialists:', error));
 
-  // Get form data
+document.getElementById("appointmentForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+
   const formData = new FormData(this);
 
-  // Convert formData to JSON
+
   const jsonData = {};
   formData.forEach((value, key) => {
       jsonData[key] = value;
   });
 
-  // Send data to API
+
   fetch("https://kyhnet23-assignment.azurewebsites.net/api/book-appointment", {
       method: "POST",
       headers: {
